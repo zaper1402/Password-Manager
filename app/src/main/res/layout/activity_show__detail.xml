@@ -1,0 +1,339 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:padding="10dp"
+
+
+    >
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="Information"
+        android:textColor="#880e4f"
+        android:textSize="40sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/show_detail_headingTextViews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title:"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/info"
+        tools:ignore="MissingConstraints"
+
+
+        tools:layout_editor_absoluteX="10dp" />
+
+    <ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/my_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+
+
+        >
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/title"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#424242"
+
+            />
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/title"
+            android:drawablePadding="10dp"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textColor="@color/colorAccent"
+            android:textSize="21sp"
+
+            />
+
+    </ViewSwitcher>
+
+    <TextView
+        android:id="@+id/text2"
+        style="@style/show_detail_headingTextViews"
+        android:layout_marginBottom="20dp"
+        android:text="Username:"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_switcher"
+
+        />
+
+
+    <ViewSwitcher
+        android:id="@+id/my_switcher2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+
+        >
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+
+            />
+
+        <EditText
+            android:id="@+id/editTextUserName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="10dp"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+
+            />
+
+    </ViewSwitcher>
+
+    <TextView
+        android:id="@+id/password"
+        style="@style/show_detail_headingTextViews"
+        android:text="Password:"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_switcher2"
+
+
+        />
+
+    <ViewSwitcher
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/my_switcher3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/password">
+
+        <TextView
+            android:id="@+id/textViewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+
+
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textinputpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleTint="@color/colorAccent"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:drawableStart="@drawable/password"
+                android:drawableLeft="@drawable/password"
+
+                android:drawablePadding="10dp"
+                android:inputType="textPassword"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+
+
+                />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+    </ViewSwitcher>
+
+    <TextView
+        android:id="@+id/text3"
+        style="@style/show_detail_headingTextViews"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Comment:"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_switcher3" />
+
+    <ViewSwitcher
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/my_switcher4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text3"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+        tools:layout_editor_absoluteX="10dp">
+
+        <TextView
+            android:id="@+id/textViewComment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/comment"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textSize="18sp"
+
+
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textinputcomment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/edittextComment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:drawableStart="@drawable/comment"
+                android:drawableLeft="@drawable/comment"
+
+                android:drawablePadding="10dp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+
+
+                />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+    </ViewSwitcher>
+
+    <Button
+        android:id="@+id/viewpassword"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/passbtn"
+        app:layout_constraintEnd_toEndOf="@id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/roundstylebtn"
+
+        android:text="EDIT"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="25sp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/delete"
+        app:layout_constraintTop_toBottomOf="@id/my_switcher4" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundstylebtn"
+        android:text="DELETE"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+
+        android:textSize="25sp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toRightOf="@+id/edit"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_switcher4" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/roundstylebtn"
+        android:text="SAVE"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="25sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/cancel"
+        app:layout_constraintTop_toBottomOf="@id/my_switcher4"
+
+        />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundstylebtn"
+        android:text="CANCEL"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="25sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@+id/save"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_switcher4" />
+
+
+</android.support.constraint.ConstraintLayout>

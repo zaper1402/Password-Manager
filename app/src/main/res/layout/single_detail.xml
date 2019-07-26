@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="1dp"
+        android:layout_marginTop="1dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:id="@+id/albhabets"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:id="@+id/detailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toRightOf="@id/albhabets"
+                android:layout_toLeftOf="@id/arrow"
+                android:textColor="#424242"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailTitle"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="3dp"
+                android:layout_toRightOf="@id/albhabets"
+                android:layout_toLeftOf="@id/arrow"
+                android:textColor="#880e4f"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/right_arrow2"
+
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

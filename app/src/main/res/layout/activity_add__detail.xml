@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/infoCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="80sp"
+        android:elevation="20dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColorHint="#880e4f">
+
+                <EditText
+                    android:id="@+id/title"
+                    style="@style/add_detail_editTexts"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/title"
+                    android:drawablePadding="10dp"
+                    android:hint="TITLE"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textSize="18sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t1"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#880e4f"
+
+                >
+
+                <EditText
+                    android:id="@+id/userName"
+                    style="@style/add_detail_editTexts"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="10dp"
+                    android:hint="USERNAME"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textSize="18sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/t3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t2"
+                android:textColorHint="#880e4f"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorAccent"
+
+                >
+
+                <EditText
+                    android:id="@+id/password"
+                    style="@style/add_detail_editTexts"
+                    android:layout_marginBottom="10dp"
+                    android:drawableStart="@drawable/password"
+                    android:drawableLeft="@drawable/password"
+                    android:drawablePadding="10dp"
+                    android:hint="PASSWORD"
+                    android:inputType="textPassword"
+                    android:textSize="18sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/t4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t3"
+                android:isScrollContainer="true"
+                android:textColorHint="#880e4f"
+                >
+
+                <EditText
+                    android:id="@+id/commentTxt"
+                    style="@style/add_detail_editTexts"
+                    android:layout_marginBottom="50dp"
+                    android:drawableLeft="@drawable/comment"
+                    android:drawablePadding="10dp"
+                    android:hint="COMMENT"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:textSize="18sp"
+                    android:textIsSelectable="true"
+                    android:focusable="true"
+                    android:longClickable="true"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoCard"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="50sp"
+        android:layout_marginBottom="20sp"
+        android:background="@drawable/roundstylebtn"
+        android:elevation="2dp"
+        android:isScrollContainer="false"
+        android:text="ADD"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="25sp" />
+
+</RelativeLayout>
+

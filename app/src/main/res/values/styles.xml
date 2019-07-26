@@ -1,0 +1,68 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="noactionbartheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="noactionbarthemesplash" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+
+    </style>
+
+    <style name="ProfileActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="add_detail_editTexts" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="add_detail_textViews" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">@color/White</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+    <style name="show_detail_headingTextViews" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@color/blackshade</item>
+    </style>
+
+    <style name="show_detail_contentTextViews" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
