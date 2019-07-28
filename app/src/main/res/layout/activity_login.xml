@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="5.5"
-            android:background="#880e4f">
+            android:background="@color/colorPrimaryDark">
 
         </LinearLayout>
 
@@ -65,7 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="70dp"
-                android:textColorHint="#880e4f"
+                android:textColorHint="@color/colorPrimaryDark"
 
 
                 >
@@ -91,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textInput1"
                 android:layout_marginBottom="5dp"
-                android:textColorHint="#880e4f"
+                android:textColorHint="@color/colorPrimaryDark"
                 app:passwordToggleTint="@color/colorAccent"
                 app:passwordToggleEnabled="true">
 
@@ -146,7 +146,7 @@
         android:layout_marginBottom="30dp"
         android:text="Don't have an account? Register"
         android:textAlignment="center"
-        android:textColor="#880e4f"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="15sp" />
 
 

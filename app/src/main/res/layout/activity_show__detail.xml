@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="5dp"
         android:text="Information"
-        android:textColor="#880e4f"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="40sp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
