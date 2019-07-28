@@ -61,7 +61,7 @@ public class Splash_Screen extends AppCompatActivity {
                     alertDialog.show();
                 }
             }
-        }, 1000);
+        }, 3000);
     }
 
     public boolean isConnected() {
