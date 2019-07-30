@@ -9,7 +9,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/iconf"
-        android:label="Open Sesame"
+        android:label="Password-Vault"
         android:roundIcon="@drawable/icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
