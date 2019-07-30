@@ -63,12 +63,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/title"
             android:drawablePadding="10dp"
             android:hint="Enter your name"
             android:imeOptions="actionNext"
             android:inputType="text"
-            android:textColor="@color/colorPrimaryDark"
 
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="21sp" />
 
     </ViewSwitcher>

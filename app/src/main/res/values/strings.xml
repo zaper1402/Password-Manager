@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">PasswordManager</string>
+    <string name="app_name">PasswordVault</string>
     <string name="title_activity_profile_detail">ProfileDetail</string>
 </resources>

@@ -66,10 +66,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginRight="40sp"
         android:layout_marginBottom="40sp"
-        android:background="@color/colorPrimaryDark"
         android:clickable="true"
         android:foreground="@drawable/round_button3"
-        app:backgroundTint="#00520B0B"
+        app:backgroundTint="#FFFFFF"
         app:elevation="@dimen/cardview_default_elevation" />
 
 </RelativeLayout>

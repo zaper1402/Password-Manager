@@ -100,7 +100,6 @@
                     android:id="@+id/password"
                     style="@style/add_detail_editTexts"
                     android:drawableStart="@drawable/password"
-                    android:drawableLeft="@drawable/password"
                     android:drawablePadding="10dp"
                     android:hint="PASSWORD"
                     android:inputType="textPassword"
