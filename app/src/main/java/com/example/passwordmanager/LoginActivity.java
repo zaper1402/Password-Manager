@@ -74,32 +74,32 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         pass.setOnClickListener(this);
         firebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
-        KeyguardManager keyguardManager = (KeyguardManager) getSystemService(KEYGUARD_SERVICE);
-        FingerprintManager fingerprintManager = (FingerprintManager) getSystemService(FINGERPRINT_SERVICE);
-
-        if(!fingerprintManager.isHardwareDetected()){
-            Toast.makeText(getApplicationContext(),"Your Device does not have a Fingerprint Sensor",Toast.LENGTH_SHORT);
-        }else {
-            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.USE_FINGERPRINT) != PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(getApplicationContext(),"Fingerprint authentication permission not enabled",Toast.LENGTH_SHORT);
-            }else{
-                if (!fingerprintManager.hasEnrolledFingerprints()) {
-                    Toast.makeText(getApplicationContext(),"Register at least one fingerprint in Settings",Toast.LENGTH_SHORT);
-                }else{
-                    if (!keyguardManager.isKeyguardSecure()) {
-                        Toast.makeText(getApplicationContext(),"Lock screen security not enabled in Settings",Toast.LENGTH_SHORT);
-                    }else{
-                        generateKey();
-
-                        if (cipherInit()) {
-                            FingerprintManager.CryptoObject cryptoObject = new FingerprintManager.CryptoObject(cipher);
-                            FingerprintHandler helper = new FingerprintHandler(this);
-                            helper.startAuth(fingerprintManager, cryptoObject);
-                        }
-                    }
-                }
-            }
-        }
+//        KeyguardManager keyguardManager = (KeyguardManager) getSystemService(KEYGUARD_SERVICE);
+//        FingerprintManager fingerprintManager = (FingerprintManager) getSystemService(FINGERPRINT_SERVICE);
+//
+//        if(!fingerprintManager.isHardwareDetected()){
+//            Toast.makeText(getApplicationContext(),"Your Device does not have a Fingerprint Sensor",Toast.LENGTH_SHORT);
+//        }else {
+//            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.USE_FINGERPRINT) != PackageManager.PERMISSION_GRANTED) {
+//                Toast.makeText(getApplicationContext(),"Fingerprint authentication permission not enabled",Toast.LENGTH_SHORT);
+//            }else{
+//                if (!fingerprintManager.hasEnrolledFingerprints()) {
+//                    Toast.makeText(getApplicationContext(),"Register at least one fingerprint in Settings",Toast.LENGTH_SHORT);
+//                }else{
+//                    if (!keyguardManager.isKeyguardSecure()) {
+//                        Toast.makeText(getApplicationContext(),"Lock screen security not enabled in Settings",Toast.LENGTH_SHORT);
+//                    }else{
+//                        generateKey();
+//
+//                        if (cipherInit()) {
+//                            FingerprintManager.CryptoObject cryptoObject = new FingerprintManager.CryptoObject(cipher);
+//                            FingerprintHandler helper = new FingerprintHandler(this);
+//                            helper.startAuth(fingerprintManager, cryptoObject);
+//                        }
+//                    }
+//                }
+//            }
+//        }
 
     }
 

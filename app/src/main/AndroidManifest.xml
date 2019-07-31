@@ -4,7 +4,7 @@
     package="com.example.passwordmanager">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="ExtraText">
-        <activity android:name=".ProfileDetail"></activity>
+        <activity android:name=".ProfileDetail" />
         <activity
             android:name=".Splash_Screen"
             android:screenOrientation="portrait"
@@ -37,7 +37,7 @@
             android:theme="@style/noactionbartheme" />
         <activity
             android:name=".MainActivity"
-            android:label="Open Sesame"
+            android:label="Password-Vault"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".Show_Detail"
@@ -46,6 +46,7 @@
             android:name=".Add_Detail"
             android:label="Add Details"
             android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".CreditInfo"></activity>
     </application>
 
 </manifest>

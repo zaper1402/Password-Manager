@@ -160,6 +160,9 @@ public class MainActivity extends AppCompatActivity {
                 Intent profile = new Intent(MainActivity.this, ProfileDetail.class);
                 startActivity(profile);
                 return true;
+            case R.id.Credits:
+                Intent credit = new Intent(MainActivity.this, CreditInfo.class);
+                startActivity(credit);
             default:
                 return super.onOptionsItemSelected(item);
         }
