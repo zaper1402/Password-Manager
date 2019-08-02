@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.passwordmanager">
+    package="com.usa.passwordmanager">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
@@ -14,9 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="ExtraText">
-        <activity android:name=".ProfileDetail" />
+        <activity android:name="com.usa.passwordmanager.ProfileDetail" />
         <activity
-            android:name=".Splash_Screen"
+            android:name="com.usa.passwordmanager.Splash_Screen"
             android:screenOrientation="portrait"
             android:theme="@style/noactionbarthemesplash">
             <intent-filter>
@@ -26,27 +26,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name="com.usa.passwordmanager.LoginActivity"
             android:label="Log In"
             android:screenOrientation="portrait"
             android:theme="@style/noactionbartheme" />
         <activity
-            android:name=".RegisterActivity"
+            android:name="com.usa.passwordmanager.RegisterActivity"
             android:label="Register"
             android:screenOrientation="portrait"
             android:theme="@style/noactionbartheme" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.usa.passwordmanager.MainActivity"
             android:label="Password-Vault"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".Show_Detail"
+            android:name="com.usa.passwordmanager.Show_Detail"
             android:label="View Details" />
         <activity
-            android:name=".Add_Detail"
+            android:name="com.usa.passwordmanager.Add_Detail"
             android:label="Add Details"
             android:windowSoftInputMode="adjustPan" />
-        <activity android:name=".CreditInfo"></activity>
+        <activity android:name="com.usa.passwordmanager.CreditInfo"></activity>
     </application>
 
 </manifest>
